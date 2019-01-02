@@ -32,5 +32,8 @@
     "babel-preset-stage-2": "^6.24.1",
     "eslint-loader": "^2.1.1",
     "pre-commit": "^1.2.2"
-  }
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
