@@ -5,7 +5,7 @@ export default class TableSource {
     content: [],
     pageable: {},
     sort: {}
-  }
+    }
 
   loading = false
 
