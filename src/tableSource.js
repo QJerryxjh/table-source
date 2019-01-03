@@ -1,4 +1,4 @@
-import filters from './filters'
+import filters from '../filters'
 
 export default class TableSource {
   dataSource = {
@@ -6,6 +6,8 @@ export default class TableSource {
     pageable: {},
     sort: {}
   }
+
+  _resSource = {}
 
   loading = false
 
@@ -41,6 +43,8 @@ export default class TableSource {
         size: this.pagination.pageSize,
         page: this.pagination.current - 1
       })
+
+      this._resSource = JSON.parse(JSON.stringify(res))
 
       res = this.config.resFilter(res)
 
@@ -93,5 +97,9 @@ export default class TableSource {
 
   get content () {
     return this.dataSource.content
+  }
+
+  get resSource () {
+    return this._resSource
   }
 }
