@@ -1,6 +1,6 @@
 {
   "name": "table-source",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "deepxi-tableSource",
   "main": "./lib/tableSource.js",
   "scripts": {
@@ -11,7 +11,9 @@
     "url": "git+https://github.com/boringbox/table-source.git"
   },
   "keywords": [
-    "tabel"
+    "tabel",
+    "vue",
+    "Ant design"
   ],
   "author": "limichange&&nemo",
   "license": "ISC",
