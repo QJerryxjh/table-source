@@ -1,4 +1,4 @@
-import filters from '../filters'
+import filters from './filters/index'
 
 export default class TableSource {
   dataSource = {
